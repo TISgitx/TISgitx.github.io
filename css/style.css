@@ -57,6 +57,21 @@ footer {
     padding: 10px;
 }
 
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-page section {
+    margin-bottom: 30px;
+}
+
+.about-page h2 {
+    margin-top: 20px;
+    color: #0066cc;
+}
+
 .logo-link {
     display: inline-block;
     text-decoration: none;
