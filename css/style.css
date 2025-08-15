@@ -57,6 +57,11 @@ footer {
     padding: 10px;
 }
 
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
 .site-logo {
     max-width: 200px;
     height: auto;
