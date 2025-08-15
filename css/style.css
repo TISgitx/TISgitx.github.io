@@ -22,6 +22,22 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.site-logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.home-page section > h2 {
+    text-align: center;
+}
+
 .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -50,13 +66,6 @@ header nav a:hover {
     border-radius: 5px;
 }
 
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
 .about-page {
     max-width: 800px;
     margin: 0 auto;
@@ -77,14 +86,9 @@ footer {
     color: #0066cc;
 }
 
-.logo-link {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.site-logo {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
