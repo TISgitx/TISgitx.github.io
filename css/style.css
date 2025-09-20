@@ -92,3 +92,68 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* === Общие стили для страниц проекта === */
+body.project-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+/* Заголовки */
+body.project-page h1,
+body.project-page h2,
+body.project-page h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #0066cc;
+}
+
+/* Секции */
+body.project-page section {
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Контейнер для изображений */
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-images img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+/* Списки изменений и ссылок */
+.project-page ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+.project-page ul li {
+    margin-bottom: 10px;
+}
+
+/* Ссылки */
+.project-page a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.project-page a:hover {
+    text-decoration: underline;
+}
