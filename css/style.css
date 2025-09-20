@@ -105,16 +105,16 @@ body.project-page {
 }
 
 /* Заголовки */
-body.project-page h1,
-body.project-page h2,
-body.project-page h3 {
+.project-page h1,
+.project-page h2,
+.project-page h3 {
     text-align: center;
     margin-bottom: 15px;
     color: #0066cc;
 }
 
 /* Секции */
-body.project-page section {
+.project-page section {
     margin-bottom: 40px;
     padding: 10px 20px;
     background-color: #fff;
@@ -123,19 +123,16 @@ body.project-page section {
 }
 
 /* Контейнер для изображений */
-.project-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
-}
-
 .project-images img {
     max-width: 300px;
-    width: 100%;
+    margin: 10px;
+    cursor: pointer;
     border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
 }
 
 /* Списки изменений и ссылок */
@@ -156,4 +153,33 @@ body.project-page section {
 
 .project-page a:hover {
     text-decoration: underline;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
 }
